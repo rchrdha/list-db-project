@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
   <title>landing page</title> 
-<body>
-  <!-- Styles for Text Types -->
+    <!-- Styles for Text Types -->
   <style>
     h1 {
       color: #000000;
@@ -50,8 +49,18 @@
     a:active {
       text-decoration: underline;
     }
+    
+    article {
+      display: grid;
+      grid-template-columns: lfr minmax(0, 8.5in) lfr;
       
+      height: 100vh; 
+    }
+    
+    article * { grid-column: 2 /3; }
+    
   </style>
+<body>
    
   <!-- Sidebar --> 
   <div class="constant sidebar" style="width:15%">
@@ -61,12 +70,9 @@
 </div>
   
   <!-- Blog Content --> 
-  <div class="Blog" style="margin-left: 15%">
-    
-  <div>
-    <p> // blog being transferred  //
-    </p>
-  </div>
+<article> 
+  Article Content Goes Here
+  </article> 
   
   
   </body> 
