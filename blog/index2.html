@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <title>blog directory</title>
+    <style>
+    <!-- fonts and what not -->
+
+    p {
+      color:#000000;
+      font-family: "Helvetica";
+      font-size: 20px;
+      text-align: center;
+      
+    }
+   
+    h3 {
+      color:#000000;
+      font-family: "Helvetica";
+      text-align: center;
+      font-size: 40px;
+      
+    }
+    
+    a {
+      color:#000000;
+      font-family: "Helvetica";
+      text-align: center;
+      font-size: 30px;
+      
+    }
+    
+    a:link {
+      text-decoration: none;
+    }
+    
+    a:visited {
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+    
+    a:active {
+      text-decoration: underline;
+    }
+
+    <!-- responsive grid -->
+    article {
+        display: grid;
+        grid-template-columns: lfr 0.5in [start] minmax(0, 7.5 in) [end] 0.5in lfr;
+
+        height: 100vh;
+
+        padding: 0.5in 0;
+    }
+
+    article * { grid-column: start / end; }
+
+    @media (max-width: 8.5in) {
+        article { grid-template-columns: lfr 5% [start] 15% 60% 15% [end] 5% lfr;}
+    }
+
+    .standard-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25%;
+        grid-column: 3 /5 ; 
+     }
+
+    </style>
+    <body>
+        <div style="text-align: center;" class="Header Section">
+        <h3>
+            rchrdh
+        </h3>
+        <h5 style="text-align: center;">
+            v1.0 "white noise"
+        </h5>
+        
+        <p></p>
+     
+        <a href="https://rchrdha.github.io/rchrdh-main/blog/art1.html"> consumer shallowness in buying clothes </a>
+
+
+    </body>
+</html>
