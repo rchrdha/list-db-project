@@ -49,21 +49,21 @@
     a:active {
       text-decoration: underline;
     }
-
-    <!-- responsive grid -->
-    article {
+        
+    .gridcontain {
         display: grid;
-        grid-template-columns: lfr 0.5in [start] minmax(0, 7.5 in) [end] 0.5in lfr;
-
-        height: 100vh;
-
-        padding: 0.5in 0;
+        grid-template-columns: 25% 50% 25%;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
     }
 
-    article * { grid-column: start / end; }
+    .gridcontain > div {
+        text-align: left;
+        font-family: "Helvetica";
+        font-size: 15px;
+        padding: 10px;
 
-    @media (max-width: 8.5in) {
-        article { grid-template-columns: lfr 5% [start] 15% 60% 15% [end] 5% lfr;}
     }
 
     .standard-image {
