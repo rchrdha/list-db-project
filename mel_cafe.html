@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+    <title>mel_cafe</title>
+    <style>
+    <!-- fonts and what not -->
+
+    p {
+      color:#000000;
+      font-family: "Helvetica";
+      font-size: 20px;
+      text-align: center;
+      
+    }
+   
+    h3 {
+      color:#000000;
+      font-family: "Helvetica";
+      text-align: center;
+      font-size: 40px;
+      
+    }
+
+    h5 {
+        color: #000000;
+        font-family: "Helvetica";
+        text-align: center;
+    }
+    
+    a {
+      color:#000000;
+      font-family: "Helvetica";
+      text-align: center;
+      font-size: 30px;
+      
+    }
+    
+    a:link {
+      text-decoration: none;
+    }
+    
+    a:visited {
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+    
+    a:active {
+      text-decoration: underline;
+    }
+
+    .gridcontain {
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .gridcontain > div {
+        text-align: left;
+        font-family: "Helvetica";
+        font-size: 15px;
+        padding: 10px;
+
+    }
+
+    .standard-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25%;
+        grid-column: 3 /5 ; 
+     }
+
+    * {
+      box-sizing: border-box;
+    }
+    
+    #user-input {
+        background-image:
+        url('/css/searchicon.png');
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 20px 12px 40px;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+    }
+
+    #cafe_table {
+        border-collapse: collapse;
+        width: 100%;
+        border: 1px solid #ddd;
+        font-size: 14px;
+    }
+
+    #cafe_table th, #cafe_table td {
+        text-align: left;
+        padding: 12px;
+    }
+
+    #cafe_table tr {
+        border-bottom: 1px solid #ddd;
+        font-family: Helvetica;
+    }
+
+    #cafe_table tr.header, #cafe_table tr:hover {
+        background-color: #f1f1f1;
+        font-family: Helvetica;
+    }
+
+    
+    </style>
+    <body>
+        <div style="text-align: center;" class="Header Section">
+        <h3>
+            rchrdh
+        </h3>
+        <h5>
+            v1.0 "white noise" 
+            <p></p>
+            mel:cafe <p></p>
+            [last update: 11/01/23]<p></p>
+            <i>"inspired spaces - beautiful coffee"</i>
+        </h5>
+
+        <p></p>
+
+        <div class="gridcontain">
+            <div></div>
+            
+            <div>
+                <p style="text-align: center;"><input type="text" id="user_input" onkeyup="search_function()" placeholder="enter style" title="type filter"></p>
+                
+                <p></p>
+                <table id="cafe_table">
+                    <tr class="header">
+                        <th style="width:33%;">Place</th>
+                        <th style="width:33%;">Style</th>
+                        <th style="width:33%;">Current Rec</th>
+                    </tr>
+                    <tr>
+                        <td>Tori's</td>
+                        <td>Bakery Cafe</td>
+                        <td>Mont Blanc Shortcake</td>
+        
+                    </tr>
+                    <tr>
+                        <td>Patricia Coffee Brewers</td>
+                        <td>Specialty Cafe</td>
+                        <td>Seasonal Blends</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Bench Coffee Co.</td>
+                        <td>Specialty Cafe</td>
+                        <td>Dacquoise<br>Bauhaus Blend</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Calere Coffee</td>
+                        <td>Bakery Cafe</td>
+                        <td>Osmanthus + Jiu Nang Roll<br>Terroir Lab Beans</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Calle Bakery</td>
+                        <td>Bakery Cafe</td>
+                        <td>Black Sesame Croissant Wheel</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Fuumi Fuumi</td>
+                        <td>Brunch Cafe</td>
+                        <td>Kabayaki Salmon Tail<br>Matcha Latte</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Ichigo</td>
+                        <td>Brunch Cafe</td>
+                        <td>Uni Scrambled Egg</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Le Bajo Milkbar</td>
+                        <td>Bakery Cafe</td>
+                        <td>Iced Matcha Azuki<br> Mont Blanc</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Little Rogue</td>
+                        <td>Specialty Cafe</td>
+                        <td>Hojicha Latte</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Palette.</td>
+                        <td>Bakery Cafe</td>
+                        <td>Hash Brown K-sandwich <br> Matcha Latte</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Overlay Coffee</td>
+                        <td>Specialty Cafe</td>
+                        <td>Cream Latte</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Hikari</td>
+                        <td>Specialty Cafe</td>
+                        <td>Kyoto Coffee Blends</td>
+                    </tr>
+        
+                    <tr>
+                        <td>INI Studio</td>
+                        <td>Specialty Cafe</td>
+                        <td>INI Blend by Terroir Laboratory <br> Croffle</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Flovie Florist</td>
+                        <td>Brunch Cafe</td>
+                        <td>Tokyo Lobster Roll<br>Rose Tea Latte</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Le Miel & Han</td>
+                        <td>Brunch Cafe</td>
+                        <td>House Juices<br>Grilled Salmon on Rice</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Raya</td>
+                        <td>Bakery Cafe</td>
+                        <td>Matcha Latte <br>Ube Pie</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Morpha</td>
+                        <td>Brunch Cafe</td>
+                        <td>Korean Hot Chicken Sandwich</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Maker</td>
+                        <td>Specialty Cafe</td>
+                        <td>The Maven Blend</td>
+                    </tr>
+        
+                    <tr>
+                        <td>ACOFFEE</td>
+                        <td>Specialty Cafe</td>
+                        <td>Seasonal Espresso Blend</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Haiku</td>
+                        <td>Brunch Cafe</td>
+                        <td>Haiku Udon <br> Sakura Latte <br> Japanese Single Origin Blends</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Itteki</td>
+                        <td>Specialty Cafe</td>
+                        <td>Matcha Latte<br> Hojicha Spiced Tea Latte</td>
+                    </tr>
+        
+                    <tr>
+                        <td>The 1985 Kafe</td>
+                        <td>Brunch Cafe </td>
+                        <td>Matcha Macchiato<br> Matcha Cake</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Taiyo Sun</td>
+                        <td>Brunch Cafe</td>
+                        <td>Azuki Butter Toast</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Collins Coffee House</td>
+                        <td>Specialty Cafe</td>
+                        <td>Devonshire Tea</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Market Lane Collins St.</td>
+                        <td>Specialty Cafe</td>
+                        <td>Seasonal Blends</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Cibi</td>
+                        <td>Brunch Cafe</td>
+                        <td>Cibi Japanese Breakfast Plate</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Ima Project</td>
+                        <td>Brunch Cafe</td>
+                        <td>Teishoku <br> Matcha Latte</td>
+                    </tr>
+        
+                    <tr>
+                        <td>First Love Coffee</td>
+                        <td>Specialty Cafe</td>
+                        <td>Batch Brew</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Wild Life Bakery</td>
+                        <td>Bakery Cafe</td>
+                        <td>Sourdough Bread</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Prior</td>
+                        <td>Brunch Cafe</td>
+                        <td>Potato Hash<br> Beef Brisket Roll</td>
+                    </tr>
+                </table>
+        
+                <script>
+                    function search_function() {
+                        var input, filter, table, tr, td, i, txtValue;
+                        input = document.getElementById("user_input");
+                        filter = input.value.toUpperCase();
+                        table = document.getElementById("cafe_table");
+                        tr = table.getElementsByTagName("tr");
+                        for (i = 0; i < tr.length; i++) {
+                            td = tr[i].getElementsByTagName("td")[1];
+                            if (td) {
+                                txtValue = td.textContent || td.innerText;
+                                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                                    tr[i].style.display = "";
+                                } else {
+                                    tr[i].style.display = "none";
+                                }
+                            }
+                        }
+        
+                    }
+                </script>
+            </div>
+            <div></div>
+        </div>
+
+
+    </body>
+</html>
